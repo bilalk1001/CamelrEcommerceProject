@@ -39,6 +39,9 @@ public class ShowATMs extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        // Is this line needed?
+        // super.onCreateView(inflater, container, savedInstanceState);
+
         View rootView = inflater.inflate(R.layout.atm_view, container, false);
         atmView = rootView.findViewById(R.id.atmRecyclerView);
         atmView.setHasFixedSize(true);

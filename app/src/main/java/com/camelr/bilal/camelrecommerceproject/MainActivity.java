@@ -253,6 +253,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 fragmentClass = ShowItems.class;
 
+                // TODO: Find out how to show the fragments in these calls
+
+//                fragment.listItems(???);
+
                 break;
 
             case R.id.nav_items_search:
@@ -264,7 +268,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_atms:
 
                 fragmentClass = ShowATMs.class;
-
 
 /*
                 atmView = findViewById(R.id.atmRecyclerView);
