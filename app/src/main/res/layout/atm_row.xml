@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/atm"
+                android:id="@+id/atmImageID"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+            <TextView
+                android:id="@+id/atmAddressID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/atmImageID"
+                android:text="Address: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/atmCoordinatesID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/atmImageID"
+                android:layout_below="@id/atmAddressID"
+                android:text="(, )"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/atmTypeAndTitleID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/atmImageID"
+                android:layout_below="@id/atmCoordinatesID"
+                android:text="Title - Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/atmIDTextView"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/atmImageID"
+                android:layout_below="@id/atmTypeAndTitleID"
+                android:text="ATM ID: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/atmOnlineStatusID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/atmImageID"
+                android:layout_below="@id/atmIDTextView"
+                android:text="Online Status: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

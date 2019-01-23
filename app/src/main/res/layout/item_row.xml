@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemImageID"
+                android:background="@drawable/fragrances"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/itemTitleID"
+                android:padding="5dp"
+                android:text="Product Title"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/itemDescID"
+                android:padding="5dp"
+                android:text="Description"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_below="@id/itemTitleID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/itemPriceID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_below="@id/itemDescID"
+                android:text="Price: "
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/itemQtyID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/itemPriceID"
+                android:text="Quantity: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/itemSkuID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_below="@id/itemQtyID"
+                android:layout_centerHorizontal="true"
+                android:text="SKU: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/exchangePolID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_below="@id/itemSkuID"
+                android:text="Exchange Policy: "
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/returnPolID"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/itemImageID"
+                android:layout_below="@id/exchangePolID"
+                android:layout_centerHorizontal="true"
+                android:text="Return Policy: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shippingChargesID"
+                android:layout_below="@+id/returnPolID"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:text="Shipping Charges"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/domesticChargeID"
+                android:text="Domestic: "
+                android:layout_below="@id/shippingChargesID"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/intlChargeID"
+                android:text="International: "
+                android:layout_below="@id/domesticChargeID"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

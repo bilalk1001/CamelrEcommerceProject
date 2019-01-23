@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:checked="true"
+
+            android:id="@+id/nav_first_fragment"
+
+            android:icon="@drawable/ic_listview"
+
+            android:title="First" />
+
+        <item
+
+            android:id="@+id/nav_second_fragment"
+
+            android:icon="@drawable/ic_two"
+
+            android:title="Second" />
+
+        <item
+
+            android:id="@+id/nav_third_fragment"
+
+            android:icon="@drawable/ic_three"
+
+            android:title="Third" />
+
+    </group>
+
+    <item android:title="Sub items">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+
+                    android:icon="@drawable/ic_dashboard"
+
+                    android:title="Sub item 1" />
+
+                <item
+
+                    android:icon="@drawable/ic_forum"
+
+                    android:title="Sub item 2" />
+
+            </group>
+
+        </menu>
+
+    </item>
+-->
+
+    <group android:checkableBehavior="single">
+        <item android:title="Items">
+            <menu>
+                <item
+                    android:id="@+id/nav_items_catalog"
+                    android:icon="@drawable/ic_listview"
+                    android:title="Catalog" />
+                <item
+                    android:id="@+id/nav_items_search"
+                    android:icon="@drawable/ic_search"
+                    android:title="Search" />
+            </menu>
+        </item>
+
+        <item android:title="ATMs">
+            <menu>
+                <item
+                    android:id="@+id/nav_atms"
+                    android:icon="@drawable/ic_listview"
+                    android:title="ATM List" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
